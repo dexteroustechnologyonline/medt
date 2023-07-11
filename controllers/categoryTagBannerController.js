@@ -103,7 +103,8 @@ exports.UploadMobImage = catchAsyncErrors(async (req, res, next) => {
       req.body.mobileImage,
       {
         folder: "Product/Mobile",
-        width: 75,
+        width: 740,
+        height: 340,
         crop: "scale",
       }
     );
