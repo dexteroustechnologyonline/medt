@@ -143,6 +143,9 @@ app.use("/api/v1", client);
 const prescription = require("./routes/prescriptionRoute");
 app.use("/api/v1", prescription);
 
+const categorytagbanner = require("./routes/categoryTagBannerRoute");
+app.use("/api/v1", categorytagbanner);
+
 app.use(errorMiddleware);
 
 module.exports = app;

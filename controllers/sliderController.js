@@ -34,7 +34,6 @@ exports.createSlider =catchAsyncErrors( async (req, res, next)=>{
 });
 
 
-
 exports.Getsliderbyid = catchAsyncErrors(async (req, res, next) => {
   try {
     let slider = await Slider.findById(req.params.id);
@@ -66,6 +65,7 @@ exports.Getsliderbyid = catchAsyncErrors(async (req, res, next) => {
     });
   }
   });
+
 //Update websiteSlider
 
 exports.UpdatewebsiteSlider = catchAsyncErrors(async (req, res, next)=>{

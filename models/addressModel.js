@@ -18,8 +18,6 @@ const addressSchema = new mongoose.Schema(
       required: [true, "Please enter drugs name"],
     },
     
-   
-
     phone: {
       type: String,
       required: true,
