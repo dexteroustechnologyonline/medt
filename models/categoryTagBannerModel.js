@@ -28,18 +28,14 @@ const categoryTagBanner = new mongoose.Schema({
     url: String,
   },
 
-  categoryTagList: [
-    {
-      tagName: {
-        type: String,
-        required:true
-      },
-      tagId: {
-        type: mongoose.Schema.ObjectId,
-        ref: "CategoryTag",
-      },
-    },
-  ],
+  tagName: {
+    type: String,
+    required:true
+  },
+  tagId: {
+    type: mongoose.Schema.ObjectId,
+    ref: "CategoryTag",
+  },
 
   user: {
     type: String,

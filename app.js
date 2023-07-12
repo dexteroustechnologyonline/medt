@@ -144,10 +144,13 @@ const prescription = require("./routes/prescriptionRoute");
 app.use("/api/v1", prescription);
 
 const categorytagbanner = require("./routes/categoryTagBannerRoute");
-app.use("/api/v1", categorytagbanner);
+app.use("/api/v1/categorytagbanner", categorytagbanner);
 
 const homebanner = require("./routes/homeBannerRoute");
 app.use("/api/v1/homebanner", homebanner);
+
+const categoryBanner = require("./routes/CategoryBannerRoute");
+app.use("/api/v1/categorybanner", categoryBanner);
 
 app.use(errorMiddleware);
 

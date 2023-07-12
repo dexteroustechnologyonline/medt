@@ -10,11 +10,11 @@ const {
 
 const router = express.Router();
 
-router.route("/categorytagbanner/new").post(createCategoryTagBanner);
-router.route("/categorytagbanner/all").get(getAllCategoryTagBanner);
-router.route("/categorytagbanner/deskimages").post(UploadDeskImage);
-router.route("/categorytagbanner/mobimages").post(UploadMobImage);
-router.route("/categorytagbanner/:id").put(UpdateCategoryTagBanner);
-router.route("/categorytagbanner/:id").delete(DeleteCategoryTagBanner);
+router.route("/new").post(createCategoryTagBanner);
+router.route("/all").get(getAllCategoryTagBanner);
+router.route("/deskimages").post(UploadDeskImage);
+router.route("/mobimages").post(UploadMobImage);
+router.route("/:id").put(UpdateCategoryTagBanner);
+router.route("/:id").delete(DeleteCategoryTagBanner);
 
 module.exports = router;
