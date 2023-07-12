@@ -146,6 +146,9 @@ app.use("/api/v1", prescription);
 const categorytagbanner = require("./routes/categoryTagBannerRoute");
 app.use("/api/v1", categorytagbanner);
 
+const homebanner = require("./routes/homeBannerRoute");
+app.use("/api/v1/homebanner", homebanner);
+
 app.use(errorMiddleware);
 
 module.exports = app;
